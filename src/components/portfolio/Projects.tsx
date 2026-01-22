@@ -2,27 +2,30 @@ import React from "react";
 import design1 from "@/assets/projects/Img2.png";
 import design2 from "@/assets/projects/Img3.png";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Projects = () => {
+  const { t } = useLanguage();
+
   return (
-    <section id="projects" className="py-20 px-[10%] bg-color-dark text-foreground">
-      <h2 className="text-[2.5rem] mb-10 text-primary text-center">Projects</h2>
+    <section id="projects" className="py-12 lg:py-16 px-[5%] md:px-[8%] bg-background text-foreground">
+      <h2 className="text-3xl lg:text-4xl mb-8 text-primary text-center font-bold">{t.projects.title}</h2>
 
       {/* Hepatocatcher */}
       <motion.div
-        className="mb-[60px]"
+        className="mb-10 p-6 bg-card rounded-2xl border border-primary/10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h3 className="text-[1.8rem] mb-5 text-secondary">
-          Hepatocatcher — Histology Image Analysis
+        <h3 className="text-xl lg:text-2xl mb-4 text-secondary font-semibold">
+          {t.projects.hepatocatcher.title}
         </h3>
-        <div className="flex flex-wrap gap-10 items-center justify-center">
-          <div className="w-full max-w-[400px] aspect-video bg-muted rounded-xl shadow-[0_0_10px_rgba(0,0,0,0.2)] flex items-center justify-center text-muted-foreground">
-            <p className="text-center p-4">
-              Demo video available on{" "}
+        <div className="flex flex-wrap gap-6 items-start">
+          <div className="w-full max-w-[320px] aspect-video bg-muted rounded-xl shadow-md flex items-center justify-center text-muted-foreground border border-primary/10">
+            <p className="text-center p-4 text-sm">
+              {t.projects.hepatocatcher.demoText}{" "}
               <a
                 href="https://github.com/fadil3x/Hepatocatcher"
                 target="_blank"
@@ -33,32 +36,17 @@ export const Projects = () => {
               </a>
             </p>
           </div>
-          <div className="flex-1 text-justify-word min-w-[280px]">
-            <p className="mb-3 leading-relaxed">
-              My first Computer Vision project is a smart filter for histology
-              images called Hepatocatcher which I designed for one of my finals.
-              As the name suggests, it's designed to identify and count
-              hepatocytes — the cells found in the liver. This filter can help
-              researchers track changes or patterns in liver tissue during
-              medical studies. Using a mix of image segmentation, edge
-              detection, and classification techniques, our code isolates
-              hepatocytes from surrounding tissue, outlines their shapes, and
-              confirms whether the cells are indeed hepatocytes or another type.
-              The goal is to produce a filtered image with hepatocytes clearly
-              highlighted, along with a second version where they're marked in
-              green and the total count is displayed. That said, the filter's
-              accuracy can drop with large variations in staining intensity or
-              color. Overlapping cells and background noise also make
-              segmentation and classification more difficult, which highlights
-              some of the current limitations of our code.
+          <div className="flex-1 min-w-[280px]">
+            <p className="mb-4 leading-relaxed text-foreground/90 text-sm lg:text-base">
+              {t.projects.hepatocatcher.description}
             </p>
             <a
-              className="text-primary font-bold no-underline hover:underline"
+              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
               href="https://github.com/fadil3x/Hepatocatcher"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View the code on GitHub
+              {t.projects.hepatocatcher.viewCode} →
             </a>
           </div>
         </div>
@@ -66,51 +54,39 @@ export const Projects = () => {
 
       {/* Graphic Design */}
       <motion.div
-        className="mb-[60px]"
+        className="p-6 bg-card rounded-2xl border border-primary/10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <h3 className="text-[1.8rem] mb-5 text-secondary">
-          Graphic Design and Visual Editing
+        <h3 className="text-xl lg:text-2xl mb-4 text-secondary font-semibold">
+          {t.projects.graphicDesign.title}
         </h3>
-        <div className="flex flex-wrap gap-10 items-center justify-center">
-          <div className="flex-1 text-justify-word min-w-[280px]">
-            <p className="mb-3 leading-relaxed">
-              I started doing graphic design when I was 17, during my second
-              year of the IB. At first, it was just a way to create phone
-              wallpapers and memes for my creativity hours — but over time, it
-              became something deeper. It gave me a way to explore different
-              parts of myself, and understand how the human eye responds to
-              colors and shapes to create visually appealing images. Years
-              later, this creative path brought me closer to computer vision, as
-              I began to study how both humans and machines perceive visuals.
-              That theory helped explain many of the things I used to notice
-              intuitively back in my teens. These days, I mostly edit photos for
-              logo designs or branding projects, but the same creativity has
-              also shaped the video edits I've done throughout my university
-              years.
+        <div className="flex flex-wrap gap-6 items-start">
+          <div className="flex-1 min-w-[280px]">
+            <p className="mb-4 leading-relaxed text-foreground/90 text-sm lg:text-base">
+              {t.projects.graphicDesign.description}
             </p>
             <a
-              className="text-primary font-bold no-underline hover:underline"
+              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
               href="https://icedrive.net/s/kVSxTgviuS1X8xQizNYYRT2zQNRy"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View my video edit portfolio on Dropbox
+              {t.projects.graphicDesign.viewPortfolio} →
             </a>
           </div>
-          <div className="flex gap-5 flex-wrap">
+          <div className="flex gap-4 flex-wrap justify-center">
             <img
               src={design1}
               alt="Design sample 1"
-              className="w-[180px] h-auto rounded-lg object-cover shadow-[0_0_5px_rgba(255,255,255,0.1)]"
+              className="w-[140px] lg:w-[160px] h-auto rounded-lg object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
             />
             <img
               src={design2}
               alt="Design sample 2"
-              className="w-[180px] h-auto rounded-lg object-cover shadow-[0_0_5px_rgba(255,255,255,0.1)]"
+              className="w-[140px] lg:w-[160px] h-auto rounded-lg object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
             />
           </div>
         </div>

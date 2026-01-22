@@ -1,27 +1,31 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <motion.section
       id="contact"
-      className="py-[100px] px-[10%] text-center bg-background text-foreground"
+      className="py-12 lg:py-16 px-[5%] md:px-[8%] text-center bg-card text-foreground border-t border-primary/10"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-[2.5rem] mb-5 text-primary">Contact</h2>
-      <p className="text-[1.1rem] mb-10 max-w-[600px] mx-auto leading-relaxed">
-        Feel free to reach out if you'd like to collaborate, ask about my work,
-        or just say hello.
+      <h2 className="text-3xl lg:text-4xl mb-4 text-primary font-bold">{t.contact.title}</h2>
+      <p className="text-base lg:text-lg mb-6 max-w-[500px] mx-auto leading-relaxed text-foreground/90">
+        {t.contact.description}
       </p>
-      <a
+      <motion.a
         href="mailto:mouhamadouniang17@gmail.com"
-        className="inline-block py-3 px-[30px] bg-secondary text-color-dark font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary hover:text-background"
+        className="inline-block py-3 px-8 bg-secondary text-secondary-foreground font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
       >
-        Send Me an Email
-      </a>
+        {t.contact.emailBtn}
+      </motion.a>
     </motion.section>
   );
 };
