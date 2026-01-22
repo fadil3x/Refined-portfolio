@@ -13,12 +13,21 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        outfit: ['"Outfit"', 'Arial', 'Helvetica', 'sans-serif'],
+        roboto: ['"Roboto"', 'Arial', 'Helvetica', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "color-text": "hsl(var(--color-text))",
+        "color-primary": "hsl(var(--color-primary))",
+        "color-secondary": "hsl(var(--color-secondary))",
+        "color-dark": "hsl(var(--color-dark))",
+        "color-bg": "hsl(var(--color-bg))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
