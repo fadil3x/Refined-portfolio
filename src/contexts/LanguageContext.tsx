@@ -36,6 +36,7 @@ interface Translations {
     title: string;
     description: string;
     emailBtn: string;
+    credlyBtn: string;
   };
 }
 
@@ -74,6 +75,7 @@ const translations: Record<Language, Translations> = {
       title: "Contact",
       description: "Feel free to reach out if you'd like to collaborate, ask about my work, or just say hello.",
       emailBtn: "Send Me an Email",
+      credlyBtn: "View My Credly Badges",
     },
   },
   fr: {
@@ -110,6 +112,7 @@ const translations: Record<Language, Translations> = {
       title: "Contact",
       description: "N'hésitez pas à me contacter si vous souhaitez collaborer, poser des questions sur mon travail, ou simplement dire bonjour.",
       emailBtn: "M'Envoyer un Email",
+      credlyBtn: "Voir Mes Badges Credly",
     },
   },
 };
