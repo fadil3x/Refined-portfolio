@@ -48,7 +48,7 @@ export const Hero = () => {
           </ul>
         </div>
         <a
-          href="mailto:mouhamadouniang17@gmail.com"
+          href="mailto:mufalilouniang@gmail.com"
           className="self-start py-2.5 px-6 bg-secondary text-secondary-foreground no-underline font-bold rounded-lg transition-all duration-300 hover:bg-primary hover:scale-105"
         >
           {t.hero.contactBtn}

@@ -20,7 +20,7 @@ export const Contact = () => {
       </p>
       <div className="flex flex-wrap items-center justify-center gap-4">
         <motion.a
-          href="mailto:mouhamadouniang17@gmail.com"
+          href="mailto:mufalilouniang@gmail.com"
           className="inline-block py-3 px-8 bg-secondary text-secondary-foreground font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
