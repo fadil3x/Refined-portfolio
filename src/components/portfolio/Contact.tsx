@@ -18,14 +18,26 @@ export const Contact = () => {
       <p className="text-base lg:text-lg mb-6 max-w-[500px] mx-auto leading-relaxed text-foreground/90">
         {t.contact.description}
       </p>
-      <motion.a
-        href="mailto:mouhamadouniang17@gmail.com"
-        className="inline-block py-3 px-8 bg-secondary text-secondary-foreground font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        {t.contact.emailBtn}
-      </motion.a>
+      <div className="flex flex-wrap items-center justify-center gap-4">
+        <motion.a
+          href="mailto:mouhamadouniang17@gmail.com"
+          className="inline-block py-3 px-8 bg-secondary text-secondary-foreground font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {t.contact.emailBtn}
+        </motion.a>
+        <motion.a
+          href="https://www.credly.com/users/mouhamadou-niang.fd2bcf9f"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block py-3 px-8 bg-transparent border-2 border-primary text-primary font-bold no-underline rounded-lg transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {t.contact.credlyBtn}
+        </motion.a>
+      </div>
     </motion.section>
   );
 };
