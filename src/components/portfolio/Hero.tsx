@@ -1,5 +1,5 @@
 import React from "react";
-import profileAsset from "@/assets/hero/profile.jpg.asset.json";
+import me from "@/assets/hero/me2.png";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -23,7 +23,7 @@ export const Hero = () => {
         viewport={{ once: true }}
       >
         <motion.img
-          src={profileAsset.url}
+          src={me}
           alt="Image of Falilou"
           className="w-[280px] lg:w-[320px] h-auto rounded-2xl shadow-lg border-2 border-primary/20"
           initial={{ opacity: 0, scale: 0.9 }}
