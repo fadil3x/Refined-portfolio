@@ -49,8 +49,8 @@ const translations: Record<Language, Translations> = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Hi, my name is Falilou",
-      bio: "I am a fourth-year Computer Science student minoring in English Literature. After completing my undergraduate studies, I hope to specialize in Machine Learning, specifically Computer Vision and Data Mining, because they relate to two of my interests: Graphic Design and Statistics. Growing up, I was not sure what I wanted to be, but my curiosity toward technology led me to the field I am in today. I feel very fortunate, and I hope to contribute to development that truly matters.",
+      greeting: "Hi, my name is Falilou!",
+      bio: "I am a Dalhousie University alumni who graduated with a Bachelor of Science in Computer Science and an English Minor. My passion lies at the intersection of data and technology; I am eager to specialize in data science while remaining versatile enough to thrive in a wide range of developer roles. I look forward to contributing to impactful, data-driven development that makes a real difference.",
       skillsTitle: "Skills & Background",
       programmingLang: "Programming Languages: C, Assembly, Python, Java.",
       spokenLang: "Spoken Languages: French (Fluent), English (Fluent), Spanish (Professional Working Proficiency), Wolof (Fluent).",
