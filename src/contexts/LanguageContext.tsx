@@ -32,6 +32,17 @@ interface Translations {
       viewPortfolio: string;
     };
   };
+  certifications: {
+    title: string;
+    tcps2: {
+      title: string;
+      description: string;
+    };
+    communityBuilder: {
+      title: string;
+      description: string;
+    };
+  };
   contact: {
     title: string;
     description: string;
