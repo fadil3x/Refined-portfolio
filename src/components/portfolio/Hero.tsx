@@ -1,5 +1,5 @@
 import React from "react";
-import me from "@/assets/hero/me2.png";
+import profileAsset from "@/assets/hero/profile.jpg.asset.json";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
