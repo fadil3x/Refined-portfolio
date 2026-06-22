@@ -15,7 +15,6 @@ interface Translations {
     skillsTitle: string;
     programmingLang: string;
     spokenLang: string;
-    experience: string;
     contactBtn: string;
   };
   projects: {
@@ -54,7 +53,6 @@ const translations: Record<Language, Translations> = {
       skillsTitle: "Skills & Background",
       programmingLang: "Programming Languages: C, Assembly, Python, Java.",
       spokenLang: "Spoken Languages: French (Fluent), English (Fluent), Spanish (Professional Working Proficiency), Wolof (Fluent).",
-      experience: "7+ years of experience in photoediting & video editing (Photoshop & Filmora).",
       contactBtn: "Contact Me",
     },
     projects: {
@@ -91,7 +89,6 @@ const translations: Record<Language, Translations> = {
       skillsTitle: "Compétences & Parcours",
       programmingLang: "Langages de programmation : C, Assembly, Python, Java.",
       spokenLang: "Langues parlées : Français (Courant), Anglais (Courant), Espagnol (Niveau professionnel), Wolof (Courant).",
-      experience: "7+ ans d'expérience en retouche photo et montage vidéo (Photoshop & Filmora).",
       contactBtn: "Me Contacter",
     },
     projects: {
