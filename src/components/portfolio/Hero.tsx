@@ -44,7 +44,6 @@ export const Hero = () => {
           <ul className="list-none p-0 m-0 space-y-1 text-sm lg:text-base">
             <li className="text-foreground/85">{t.hero.programmingLang}</li>
             <li className="text-foreground/85">{t.hero.spokenLang}</li>
-            <li className="text-foreground/85">{t.hero.experience}</li>
           </ul>
         </div>
         <a
