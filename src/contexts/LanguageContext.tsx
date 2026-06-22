@@ -7,6 +7,7 @@ interface Translations {
     portfolio: string;
     about: string;
     projects: string;
+    certifications: string;
     contact: string;
   };
   hero: {
