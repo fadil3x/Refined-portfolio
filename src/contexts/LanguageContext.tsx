@@ -86,8 +86,8 @@ const translations: Record<Language, Translations> = {
       contact: "Contact",
     },
     hero: {
-      greeting: "Bonjour, je m'appelle Falilou",
-      bio: "Je suis étudiant en quatrième année d'informatique avec une mineure en littérature anglaise. Après mes études de premier cycle, j'espère me spécialiser en apprentissage automatique, notamment en vision par ordinateur et en exploration de données, car ils sont liés à deux de mes intérêts : le design graphique et les statistiques. En grandissant, je n'étais pas sûr de ce que je voulais devenir, mais ma curiosité envers la technologie m'a conduit vers le domaine où je suis aujourd'hui. Je me sens très chanceux et j'espère contribuer à un développement qui compte vraiment.",
+      greeting: "Bonjour, je m'appelle Falilou !",
+      bio: "Je suis diplômé de l'Université Dalhousie, titulaire d'un baccalauréat en sciences en informatique avec une mineure en anglais. Ma passion se situe à l'intersection des données et de la technologie ; je souhaite me spécialiser en science des données tout en conservant la polyvalence nécessaire pour exceller dans un large éventail de rôles de développeur. J'ai hâte de contribuer à des projets impactants, axés sur les données, qui font une réelle différence.",
       skillsTitle: "Compétences & Parcours",
       programmingLang: "Langages de programmation : C, Assembly, Python, Java.",
       spokenLang: "Langues parlées : Français (Courant), Anglais (Courant), Espagnol (Niveau professionnel), Wolof (Courant).",
