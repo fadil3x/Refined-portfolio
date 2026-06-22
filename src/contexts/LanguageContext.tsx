@@ -57,6 +57,7 @@ const translations: Record<Language, Translations> = {
       portfolio: "Portfolio",
       about: "About",
       projects: "Projects",
+      certifications: "Certifications",
       contact: "Contact",
     },
     hero: {
@@ -81,6 +82,17 @@ const translations: Record<Language, Translations> = {
         viewPortfolio: "View my video edit portfolio",
       },
     },
+    certifications: {
+      title: "Certifications",
+      tcps2: {
+        title: "TCPS 2: CORE 2022",
+        description: "Completed a course on research ethics based on the Tri-Council Policy Statement: Ethical Conduct for Research Involving Humans, demonstrating a strong understanding of ethical standards in research practices.",
+      },
+      communityBuilder: {
+        title: "Dalhousie Residence Life — Outstanding Community Builder",
+        description: "Recognized for demonstrating a lasting commitment to supporting peers and residents, and a willingness to develop meaningful relationships with teammates and within the Residence community.",
+      },
+    },
     contact: {
       title: "Contact",
       description: "Feel free to reach out if you'd like to collaborate, ask about my work, or just say hello.",
@@ -93,6 +105,7 @@ const translations: Record<Language, Translations> = {
       portfolio: "Portfolio",
       about: "À propos",
       projects: "Projets",
+      certifications: "Certifications",
       contact: "Contact",
     },
     hero: {
@@ -115,6 +128,17 @@ const translations: Record<Language, Translations> = {
         title: "Design Graphique et Édition Visuelle",
         description: "J'ai commencé le design graphique à 17 ans, pendant ma deuxième année du BI. Au début, c'était juste un moyen de créer des fonds d'écran et des mèmes pour mes heures de créativité — mais avec le temps, c'est devenu quelque chose de plus profond. Cela m'a donné un moyen d'explorer différentes parties de moi-même et de comprendre comment l'œil humain répond aux couleurs et aux formes pour créer des images visuellement attrayantes. Des années plus tard, ce chemin créatif m'a rapproché de la vision par ordinateur.",
         viewPortfolio: "Voir mon portfolio de montages vidéo",
+      },
+    },
+    certifications: {
+      title: "Certifications",
+      tcps2: {
+        title: "TCPS 2 : CORE 2022",
+        description: "Formation sur l'éthique de la recherche basée sur la Déclaration de politique des trois conseils : Conduite éthique de la recherche impliquant des êtres humains, démontrant une solide compréhension des normes éthiques en matière de recherche.",
+      },
+      communityBuilder: {
+        title: "Dalhousie Residence Life — Outstanding Community Builder",
+        description: "Reconnu pour avoir démontré un engagement durable envers le soutien aux pairs et aux résidents, ainsi qu'une volonté de développer des relations significatives avec les coéquipiers et au sein de la communauté résidentielle.",
       },
     },
     contact: {
