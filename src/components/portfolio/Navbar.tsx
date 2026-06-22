@@ -45,6 +45,14 @@ export const Navbar = () => {
             </li>
             <li>
               <a
+                href="#certifications"
+                className="text-base text-foreground no-underline hover:text-primary transition-colors"
+              >
+                {t.nav.certifications}
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 className="text-base text-foreground no-underline hover:text-primary transition-colors"
               >
@@ -73,6 +81,14 @@ export const Navbar = () => {
                 className="text-lg text-foreground no-underline hover:text-primary transition-colors"
               >
                 {t.nav.projects}
+              </a>
+            </li>
+            <li>
+              <a
+                href="#certifications"
+                className="text-lg text-foreground no-underline hover:text-primary transition-colors"
+              >
+                {t.nav.certifications}
               </a>
             </li>
             <li>
