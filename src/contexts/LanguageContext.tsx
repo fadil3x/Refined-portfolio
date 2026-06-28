@@ -31,6 +31,11 @@ interface Translations {
       description: string;
       viewPortfolio: string;
     };
+    xiffNa: {
+      title: string;
+      description: string;
+      viewProject: string;
+    };
   };
   certifications: {
     title: string;
@@ -81,6 +86,11 @@ const translations: Record<Language, Translations> = {
         description: "I started doing graphic design when I was 17, during my second year of the IB. At first, it was just a way to create phone wallpapers and memes for my creativity hours — but over time, it became something deeper. It gave me a way to explore different parts of myself, and understand how the human eye responds to colors and shapes to create visually appealing images. Years later, this creative path brought me closer to computer vision, as I began to study how both humans and machines perceive visuals.",
         viewPortfolio: "View my video edit portfolio",
       },
+      xiffNa: {
+        title: "Xiff-Na — Fast-Food Directory for Senegal",
+        description: "Xiff-Na is a web-based fast-food directory built for Senegal, starting with Dakar. It aggregates real restaurant data from Google Maps and presents it through an intuitive interface where users can filter by neighborhood, cuisine type, and proximity. The platform showcases photos, ratings, opening hours, and contact information — making it easy for anyone to discover and order from nearby fast-food spots. This project reflects my interest in data aggregation, user experience design, and building practical tools for local communities.",
+        viewProject: "Visit Xiff-Na",
+      },
     },
     certifications: {
       title: "Certifications",
@@ -128,6 +138,11 @@ const translations: Record<Language, Translations> = {
         title: "Design Graphique et Édition Visuelle",
         description: "J'ai commencé le design graphique à 17 ans, pendant ma deuxième année du BI. Au début, c'était juste un moyen de créer des fonds d'écran et des mèmes pour mes heures de créativité — mais avec le temps, c'est devenu quelque chose de plus profond. Cela m'a donné un moyen d'explorer différentes parties de moi-même et de comprendre comment l'œil humain répond aux couleurs et aux formes pour créer des images visuellement attrayantes. Des années plus tard, ce chemin créatif m'a rapproché de la vision par ordinateur.",
         viewPortfolio: "Voir mon portfolio de montages vidéo",
+      },
+      xiffNa: {
+        title: "Xiff-Na — Annuaire de Fast-Foods au Sénégal",
+        description: "Xiff-Na est un annuaire de fast-foods en ligne conçu pour le Sénégal, en commençant par Dakar. Il agrège des données réelles de restaurants via Google Maps et les présente à travers une interface intuitive permettant de filtrer par quartier, type de cuisine et proximité. La plateforme affiche des photos, des notes, les horaires d'ouverture et les coordonnées — facilitant la découverte et la commande auprès des fast-foods à proximité. Ce projet reflète mon intérêt pour l'agrégation de données, la conception d'expérience utilisateur et la création d'outils pratiques pour les communautés locales.",
+        viewProject: "Visiter Xiff-Na",
       },
     },
     certifications: {

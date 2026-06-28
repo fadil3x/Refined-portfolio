@@ -1,6 +1,7 @@
 import React from "react";
 import design1 from "@/assets/projects/Img2.png";
 import design2 from "@/assets/projects/Img3.png";
+import xiffNaScreenshot from "@/assets/projects/xiff-na-screenshot.png.asset.json";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
