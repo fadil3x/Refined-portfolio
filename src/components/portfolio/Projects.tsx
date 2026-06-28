@@ -1,6 +1,7 @@
 import React from "react";
 import design1 from "@/assets/projects/Img2.png";
 import design2 from "@/assets/projects/Img3.png";
+import xiffNaScreenshot from "@/assets/projects/xiff-na-screenshot.png.asset.json";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -49,6 +50,39 @@ export const Projects = () => {
               {t.projects.hepatocatcher.viewCode} →
             </a>
           </div>
+        </div>
+      </motion.div>
+
+      {/* Xiff-Na */}
+      <motion.div
+        className="mb-10 p-6 bg-card rounded-2xl border border-primary/10"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.15 }}
+        viewport={{ once: true }}
+      >
+        <h3 className="text-xl lg:text-2xl mb-4 text-secondary font-semibold">
+          {t.projects.xiffNa.title}
+        </h3>
+        <div className="flex flex-wrap gap-6 items-start">
+          <div className="flex-1 min-w-[280px]">
+            <p className="mb-4 leading-relaxed text-foreground/90 text-sm lg:text-base">
+              {t.projects.xiffNa.description}
+            </p>
+            <a
+              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
+              href="https://xiff-na.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.projects.xiffNa.viewProject} →
+            </a>
+          </div>
+          <img
+            src={xiffNaScreenshot.url}
+            alt="Xiff-Na fast-food directory screenshot"
+            className="w-full max-w-[400px] h-auto rounded-xl object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
+          />
         </div>
       </motion.div>
 
