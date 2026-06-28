@@ -65,6 +65,11 @@ export const Projects = () => {
           {t.projects.xiffNa.title}
         </h3>
         <div className="flex flex-wrap gap-6 items-start">
+          <img
+            src={xiffNaScreenshot.url}
+            alt="Xiff-Na fast-food directory screenshot"
+            className="w-full max-w-[320px] h-auto rounded-xl object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
+          />
           <div className="flex-1 min-w-[280px]">
             <p className="mb-4 leading-relaxed text-foreground/90 text-sm lg:text-base">
               {t.projects.xiffNa.description}
@@ -78,11 +83,6 @@ export const Projects = () => {
               {t.projects.xiffNa.viewProject} →
             </a>
           </div>
-          <img
-            src={xiffNaScreenshot.url}
-            alt="Xiff-Na fast-food directory screenshot"
-            className="w-full max-w-[400px] h-auto rounded-xl object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
-          />
         </div>
       </motion.div>
 
