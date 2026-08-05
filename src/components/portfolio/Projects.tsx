@@ -1,7 +1,7 @@
 import React from "react";
 import design1 from "@/assets/projects/Img2.png";
 import design2 from "@/assets/projects/Img3.png";
-import xiffNaScreenshot from "@/assets/projects/xiff-na-screenshot.png.asset.json";
+import xiffNaScreenshot from "@/assets/projects/xiff-na.png";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -66,7 +66,8 @@ export const Projects = () => {
         </h3>
         <div className="flex flex-wrap gap-6 items-start">
           <img
-            src={xiffNaScreenshot.url}
+            src={xiffNaScreenshot}
+            loading="lazy"
             alt="Xiff-Na fast-food directory screenshot"
             className="w-full max-w-[320px] h-auto rounded-xl object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
           />
