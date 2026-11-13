@@ -8,99 +8,70 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { t } = useLanguage();
 
+  const links = [
+    { href: "#about", label: t.nav.about },
+    { href: "#projects", label: t.nav.projects },
+    { href: "#certifications", label: t.nav.certifications },
+    { href: "#resume", label: t.nav.resume },
+    { href: "#contact", label: t.nav.contact },
+  ];
+
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between py-4 px-[5%] md:px-[8%] bg-background/95 backdrop-blur-sm border-b border-primary/10">
+    <nav className="sticky top-0 z-50 flex items-center justify-between py-3 px-[5%] md:px-[8%] bg-background/95 backdrop-blur-sm border-b border-primary/10">
       <a
         className="text-2xl font-semibold no-underline text-foreground hover:text-primary transition-colors"
         href="/"
       >
         {t.nav.portfolio}
       </a>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-1 md:gap-4">
         <LanguageToggle />
-        <div className="flex flex-col items-end">
+        <button
+          type="button"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden flex items-center justify-center w-11 h-11 rounded-lg"
+        >
           <img
-            className="block w-8 h-8 cursor-pointer md:hidden"
+            className="block w-8 h-8"
             src={menuOpen ? closeIcon : menuIcon}
-            alt="menu-button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            alt=""
           />
-          {/* Desktop nav */}
-          <ul className="hidden md:flex items-center gap-6 list-none">
-            <li>
+        </button>
+
+        {/* Desktop nav */}
+        <ul className="hidden md:flex items-center gap-6 list-none">
+          {links.map((link) => (
+            <li key={link.href}>
               <a
-                href="#about"
+                href={link.href}
                 className="text-base text-foreground no-underline hover:text-primary transition-colors"
               >
-                {t.nav.about}
+                {link.label}
               </a>
             </li>
-            <li>
+          ))}
+        </ul>
+
+        {/* Mobile nav */}
+        <ul
+          className={`${
+            menuOpen ? "flex" : "hidden"
+          } md:hidden absolute top-full right-[5%] mt-1 flex-col items-stretch gap-1 list-none rounded-xl p-3 bg-card/95 backdrop-blur-sm shadow-lg border border-primary/20 z-50 min-w-[190px]`}
+          onClick={() => setMenuOpen(false)}
+        >
+          {links.map((link) => (
+            <li key={link.href}>
               <a
-                href="#projects"
-                className="text-base text-foreground no-underline hover:text-primary transition-colors"
+                href={link.href}
+                className="block py-2.5 px-3 text-lg text-foreground no-underline hover:text-primary transition-colors"
               >
-                {t.nav.projects}
+                {link.label}
               </a>
             </li>
-            <li>
-              <a
-                href="#certifications"
-                className="text-base text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.certifications}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-base text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.contact}
-              </a>
-            </li>
-          </ul>
-          {/* Mobile nav */}
-          <ul
-            className={`${
-              menuOpen ? "flex" : "hidden"
-            } md:hidden absolute top-full right-[5%] flex-col items-end gap-3 list-none rounded-xl p-5 bg-card/95 backdrop-blur-sm shadow-lg border border-primary/20 z-50`}
-            onClick={() => setMenuOpen(false)}
-          >
-            <li>
-              <a
-                href="#about"
-                className="text-lg text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.about}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="text-lg text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.projects}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#certifications"
-                className="text-lg text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.certifications}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="text-lg text-foreground no-underline hover:text-primary transition-colors"
-              >
-                {t.nav.contact}
-              </a>
-            </li>
-          </ul>
-        </div>
+          ))}
+        </ul>
       </div>
     </nav>
   );

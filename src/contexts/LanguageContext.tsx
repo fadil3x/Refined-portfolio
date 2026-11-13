@@ -8,6 +8,7 @@ interface Translations {
     about: string;
     projects: string;
     certifications: string;
+    resume: string;
     contact: string;
   };
   hero: {
@@ -43,6 +44,12 @@ interface Translations {
       description: string;
     };
   };
+  resume: {
+    title: string;
+    description: string;
+    downloadBtn: string;
+    meta: string;
+  };
   contact: {
     title: string;
     description: string;
@@ -58,6 +65,7 @@ const translations: Record<Language, Translations> = {
       about: "About",
       projects: "Projects",
       certifications: "Certifications",
+      resume: "Resume",
       contact: "Contact",
     },
     hero: {
@@ -93,6 +101,13 @@ const translations: Record<Language, Translations> = {
         description: "Recognized for demonstrating a lasting commitment to supporting peers and residents, and a willingness to develop meaningful relationships with teammates and within the Residence community.",
       },
     },
+    resume: {
+      title: "Resume",
+      description:
+        "Grab a copy of my current resume — education, technical skills, projects, certifications and volunteer experience in one PDF.",
+      downloadBtn: "Download My Resume",
+      meta: "PDF · 2 pages",
+    },
     contact: {
       title: "Contact",
       description: "Feel free to reach out if you'd like to collaborate, ask about my work, or just say hello.",
@@ -106,6 +121,7 @@ const translations: Record<Language, Translations> = {
       about: "À propos",
       projects: "Projets",
       certifications: "Certifications",
+      resume: "CV",
       contact: "Contact",
     },
     hero: {
@@ -140,6 +156,13 @@ const translations: Record<Language, Translations> = {
         title: "Dalhousie Residence Life — Outstanding Community Builder",
         description: "Reconnu pour avoir démontré un engagement durable envers le soutien aux pairs et aux résidents, ainsi qu'une volonté de développer des relations significatives avec les coéquipiers et au sein de la communauté résidentielle.",
       },
+    },
+    resume: {
+      title: "Mon CV",
+      description:
+        "Téléchargez une copie de mon CV à jour — formation, compétences techniques, projets, certifications et expérience bénévole en un seul PDF.",
+      downloadBtn: "Télécharger mon CV",
+      meta: "PDF · 2 pages",
     },
     contact: {
       title: "Contact",

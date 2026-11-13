@@ -40,7 +40,7 @@ export const Projects = () => {
               {t.projects.hepatocatcher.description}
             </p>
             <a
-              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
+              className="inline-flex items-center gap-2 min-h-[44px] text-primary font-bold no-underline hover:underline text-sm lg:text-base"
               href="https://github.com/fadil3x/Hepatocatcher"
               target="_blank"
               rel="noopener noreferrer"
@@ -74,7 +74,7 @@ export const Projects = () => {
               {t.projects.xiffNa.description}
             </p>
             <a
-              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
+              className="inline-flex items-center gap-2 min-h-[44px] text-primary font-bold no-underline hover:underline text-sm lg:text-base"
               href="https://xiff-na.lovable.app/"
               target="_blank"
               rel="noopener noreferrer"

@@ -7,7 +7,7 @@ export const LanguageToggle = () => {
   return (
     <motion.button
       onClick={() => setLanguage(language === "en" ? "fr" : "en")}
-      className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/50 bg-card/50 backdrop-blur-sm text-sm font-medium text-foreground hover:bg-primary/20 hover:border-primary transition-all duration-300"
+      className="flex items-center gap-2 px-3.5 min-h-[44px] rounded-full border border-primary/50 bg-card/50 backdrop-blur-sm text-sm font-medium text-foreground hover:bg-primary/20 hover:border-primary transition-all duration-300"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
     >

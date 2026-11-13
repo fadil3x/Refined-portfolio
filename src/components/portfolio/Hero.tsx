@@ -34,7 +34,7 @@ export const Hero = () => {
       </motion.div>
       <div className="flex-1 min-w-[300px] max-w-[550px] flex flex-col gap-4">
         <h1 className="text-3xl lg:text-4xl text-primary font-bold">{t.hero.greeting}</h1>
-        <p className="text-base lg:text-lg text-justify-word leading-relaxed text-foreground/90">
+        <p className="text-base lg:text-lg text-left md:text-justify-word leading-relaxed text-foreground/90">
           {t.hero.bio}
         </p>
         <div className="bg-primary/5 p-4 border-l-4 border-primary rounded-lg">

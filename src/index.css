@@ -68,6 +68,11 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* keep section headings clear of the sticky navbar when jumping from the menu */
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
 }
 
 @layer utilities {
