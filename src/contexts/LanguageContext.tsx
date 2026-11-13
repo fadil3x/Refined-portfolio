@@ -48,7 +48,6 @@ interface Translations {
     title: string;
     description: string;
     downloadBtn: string;
-    meta: string;
   };
   contact: {
     title: string;
@@ -106,7 +105,6 @@ const translations: Record<Language, Translations> = {
       description:
         "Grab a copy of my current resume — education, technical skills, projects, certifications and volunteer experience in one PDF.",
       downloadBtn: "Download My Resume",
-      meta: "PDF · 2 pages",
     },
     contact: {
       title: "Contact",
@@ -162,7 +160,6 @@ const translations: Record<Language, Translations> = {
       description:
         "Téléchargez une copie de mon CV à jour — formation, compétences techniques, projets, certifications et expérience bénévole en un seul PDF.",
       downloadBtn: "Télécharger mon CV",
-      meta: "PDF · 2 pages",
     },
     contact: {
       title: "Contact",

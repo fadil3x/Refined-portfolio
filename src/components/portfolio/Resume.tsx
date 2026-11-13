@@ -22,9 +22,6 @@ export const Resume = () => {
           <p className="text-sm lg:text-base leading-relaxed text-foreground/90">
             {t.resume.description}
           </p>
-          <p className="mt-3 text-xs lg:text-sm text-foreground/55">
-            {t.resume.meta}
-          </p>
         </div>
         <motion.a
           href="/downloads/Falilou-Niang-Resume-2026.pdf"
