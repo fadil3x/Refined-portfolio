@@ -1,6 +1,4 @@
 import React from "react";
-import design1 from "@/assets/projects/Img2.png";
-import design2 from "@/assets/projects/Img3.png";
 import xiffNaScreenshot from "@/assets/projects/xiff-na.png";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -55,7 +53,7 @@ export const Projects = () => {
 
       {/* Xiff-Na */}
       <motion.div
-        className="mb-10 p-6 bg-card rounded-2xl border border-primary/10"
+        className="p-6 bg-card rounded-2xl border border-primary/10"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15 }}
@@ -83,46 +81,6 @@ export const Projects = () => {
             >
               {t.projects.xiffNa.viewProject} →
             </a>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Graphic Design */}
-      <motion.div
-        className="p-6 bg-card rounded-2xl border border-primary/10"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        viewport={{ once: true }}
-      >
-        <h3 className="text-xl lg:text-2xl mb-4 text-secondary font-semibold">
-          {t.projects.graphicDesign.title}
-        </h3>
-        <div className="flex flex-wrap gap-6 items-start">
-          <div className="flex-1 min-w-[280px]">
-            <p className="mb-4 leading-relaxed text-foreground/90 text-sm lg:text-base">
-              {t.projects.graphicDesign.description}
-            </p>
-            <a
-              className="inline-flex items-center gap-2 text-primary font-bold no-underline hover:underline text-sm lg:text-base"
-              href="https://icedrive.net/s/kVSxTgviuS1X8xQizNYYRT2zQNRy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t.projects.graphicDesign.viewPortfolio} →
-            </a>
-          </div>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <img
-              src={design1}
-              alt="Design sample 1"
-              className="w-[140px] lg:w-[160px] h-auto rounded-lg object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
-            />
-            <img
-              src={design2}
-              alt="Design sample 2"
-              className="w-[140px] lg:w-[160px] h-auto rounded-lg object-cover shadow-md border border-primary/10 hover:scale-105 transition-transform"
-            />
           </div>
         </div>
       </motion.div>

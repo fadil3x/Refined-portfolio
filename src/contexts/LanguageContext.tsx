@@ -26,11 +26,6 @@ interface Translations {
       viewCode: string;
       demoText: string;
     };
-    graphicDesign: {
-      title: string;
-      description: string;
-      viewPortfolio: string;
-    };
     xiffNa: {
       title: string;
       description: string;
@@ -81,11 +76,6 @@ const translations: Record<Language, Translations> = {
         viewCode: "View the code on GitHub",
         demoText: "Demo video available on",
       },
-      graphicDesign: {
-        title: "Graphic Design and Visual Editing",
-        description: "I started doing graphic design when I was 17, during my second year of the IB. At first, it was just a way to create phone wallpapers and memes for my creativity hours — but over time, it became something deeper. It gave me a way to explore different parts of myself, and understand how the human eye responds to colors and shapes to create visually appealing images. Years later, this creative path brought me closer to computer vision, as I began to study how both humans and machines perceive visuals.",
-        viewPortfolio: "View my video edit portfolio",
-      },
       xiffNa: {
         title: "Xiff-Na — Fast-Food Directory for Senegal",
         description: "Xiff-Na is a web-based fast-food directory built for Senegal, starting with Dakar. It aggregates real restaurant data from Google Maps and presents it through an intuitive interface where users can filter by neighborhood, cuisine type, and proximity. The platform showcases photos, ratings, opening hours, and contact information — making it easy for anyone to discover and order from nearby fast-food spots. This project reflects my interest in data aggregation, user experience design, and building practical tools for local communities.",
@@ -133,11 +123,6 @@ const translations: Record<Language, Translations> = {
         description: "Mon premier projet de vision par ordinateur est un filtre intelligent pour les images histologiques appelé Hepatocatcher, que j'ai conçu pour l'un de mes examens finaux. Comme son nom l'indique, il est conçu pour identifier et compter les hépatocytes — les cellules trouvées dans le foie. Ce filtre peut aider les chercheurs à suivre les changements ou les motifs dans les tissus hépatiques lors d'études médicales. En utilisant un mélange de segmentation d'image, de détection de contours et de techniques de classification, notre code isole les hépatocytes du tissu environnant.",
         viewCode: "Voir le code sur GitHub",
         demoText: "Vidéo de démonstration disponible sur",
-      },
-      graphicDesign: {
-        title: "Design Graphique et Édition Visuelle",
-        description: "J'ai commencé le design graphique à 17 ans, pendant ma deuxième année du BI. Au début, c'était juste un moyen de créer des fonds d'écran et des mèmes pour mes heures de créativité — mais avec le temps, c'est devenu quelque chose de plus profond. Cela m'a donné un moyen d'explorer différentes parties de moi-même et de comprendre comment l'œil humain répond aux couleurs et aux formes pour créer des images visuellement attrayantes. Des années plus tard, ce chemin créatif m'a rapproché de la vision par ordinateur.",
-        viewPortfolio: "Voir mon portfolio de montages vidéo",
       },
       xiffNa: {
         title: "Xiff-Na — Annuaire de Fast-Foods au Sénégal",
